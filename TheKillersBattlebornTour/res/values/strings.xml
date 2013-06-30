@@ -15,5 +15,7 @@
     <string name="desc_somebodytoldme">Somebody Told Me performed in Sao Paulo 2013</string>
     <string name="desc_human">Human performed in San Francisco 2013</string>
     <string name="desc_killers2012worldtour">Poster for BattleBorn tour in Europe 2012</string>
+    <string name="concert_locations">Concerts</string>
+    
 
 </resources>
