@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="james.rogers.youtube"
+    package="edu.rogers.thekillersbattleborntour"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    
+    <permission
+        android:name="edu.rogers.thekillersbattleborntour.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+	<uses-permission android:name="edu.rogers.thekillersbattleborntour.permission.MAPS_RECEIVE" />
+    
     <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+	
+	<uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -41,6 +53,18 @@
 				<category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="edu.rogers.thekillersbattleborntour.ConcertsActivity"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.ConcertsActivity" />
+				<category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <meta-data
+    			android:name="com.google.android.maps.v2.API_KEY"
+   				android:value="AIzaSyBO_WhYXgK1-2NF5j-XJjeFN6XmboN_-rM" />
     </application>
 
 </manifest>

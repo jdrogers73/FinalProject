@@ -1,0 +1,13 @@
+package edu.rogers.thekillersbattleborntour;
+
+import android.R;
+
+public class ConcertsActivity extends Activity
+{
+	@Override
+	protected void onCreate(Bundle savedInstanceState)
+	{
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.concerts_layout);
+	}
+}

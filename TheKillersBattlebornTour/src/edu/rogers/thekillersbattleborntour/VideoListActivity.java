@@ -1,6 +1,5 @@
 package edu.rogers.thekillersbattleborntour;
 
-import james.rogers.youtube.R;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;

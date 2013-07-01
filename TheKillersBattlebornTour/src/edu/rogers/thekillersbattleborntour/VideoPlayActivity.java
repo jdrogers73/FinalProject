@@ -1,8 +1,6 @@
 package edu.rogers.thekillersbattleborntour;
-import james.rogers.youtube.R;
 
 import java.io.File;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
